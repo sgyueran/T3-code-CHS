@@ -9,6 +9,8 @@
 
 **前置条件**：Windows、Node.js 22+、已安装 T3 Code。
 
+👉 **第一次用？看 [新手教程](docs/新手教程.md)**（从装 Node.js 到验证效果、还原、更新后重打、常见问题，全程复制粘贴）。
+
 ## 原理
 - 界面前端在 `resources\server.asar` 的 `apps/server/dist/client/`（React 打包产物，无 i18n 框架）。
 - 补丁往 `index.html` 注入 `<script src="/i18n/zh-CN.js">`。脚本内置词典，用 `MutationObserver` 把 DOM 里的文本节点和 `placeholder / title / aria-label / alt` 实时换成中文。
