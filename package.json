@@ -1,0 +1,33 @@
+{
+  "name": "t3code-chs",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "T3 Code 简体中文汉化补丁（运行时注入）",
+  "scripts": {
+    "extract": "node scripts/extract-strings.mjs",
+    "build": "node scripts/build-runtime.mjs",
+    "patch": "node scripts/patch.mjs",
+    "restore": "node scripts/restore.mjs"
+  },
+  "dependencies": {
+    "@electron/asar": "^3.2.17",
+    "acorn": "^8.14.0",
+    "acorn-walk": "^8.3.4"
+  },
+  "devDependencies": {
+    "jsdom": "^25.0.1"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sgyueran/T3-code-CHS.git"
+  },
+  "keywords": [
+    "t3code",
+    "electron",
+    "i18n",
+    "zh-CN",
+    "localization"
+  ]
+}

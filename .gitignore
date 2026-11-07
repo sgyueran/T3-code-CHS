@@ -1,0 +1,7 @@
+node_modules/
+.scratch/
+dist/
+dict/_chunks/
+dict/_candidates.json
+dict/_todo.json
+dict/_missing*.json
